@@ -1,56 +1,85 @@
 * {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 header {
-    padding: 1.5% 2%;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Inconsolata', monospace;
-    color: #333333;
+  padding: 1.5% 2%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Inconsolata", monospace;
+  color: #333333;
 }
 
 .content {
-    display: flex;
-    font-family: 'Space Mono', monospace;
-    font-size: 6rem;
-    padding: 5% 3%;
+  display: flex;
+  font-family: "Space Mono", monospace;
+  font-size: 6rem;
+  padding: 5% 3%;
 }
 
 img {
-    width: 40%;
-    margin-right: 10%;
+  width: 40%;
+  margin-right: 10%;
 }
 
 .cta {
-    width: 40%;
+  width: 40%;
 }
 
 h1 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 94.78px;
-    color: #333333;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 94.78px;
+  color: #333333;
 }
 
 p {
-    width: 55%;
-    font-size: 24px;
-    line-height: 35.54px;
-    color: #4f4f4f;
+  width: 55%;
+  font-size: 24px;
+  line-height: 35.54px;
+  color: #4f4f4f;
 }
 
 button {
-    background-color: #333333;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    height: 68px;
-    width: 216px;
-    cursor: pointer;
+  background-color: #333333;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  height: 68px;
+  width: 216px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #4d4d4d;
+  background-color: #4d4d4d;
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    flex-direction: column;
+    padding: 15% 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .cta {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 71.09px;
+  }
+
+  p {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15%;
+  }
 }
